@@ -1,0 +1,49 @@
+<script>
+    function onLoad(){
+        document.documentElement.style.webkitTouchCallout="none";//禁止弹出菜单
+        document.documentElement.style.webkitUserSelect="none";  //禁止选中
+    }
+    
+    function vedio_onplay(){
+        //alert("vedio_onplay");
+        location.href = "objc:onplay"; 
+    }
+
+
+    function vedio_goplay(){
+        //alert("vedio_onplay");
+        location.href = "objc:goplay";
+    }
+
+</script>
+
+<style type="text/css">
+    div.player
+    {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-top:10px;
+    }
+    
+  
+    </style>
+
+<body onload="onLoad();">
+    
+    <div class="player" >
+        
+        <div style="padding-left:40px">{$v_title}</div>
+        <br/>
+        <div align='center'>
+            
+            <img src ="./video_play_ipad.png" width="800" height="480" onclick="vedio_goplay();" />
+
+
+        </div>
+        
+        
+        
+    </div>
+    
+</body>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H8r-IN-T2O">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Nav Controller-->
+        <scene sceneID="u0V-Eq-FJv">
+            <objects>
+                <navigationController id="H8r-IN-T2O" customClass="BaseNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nwQ-Em-e2l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nns-dD-fe1" kind="relationship" relationship="rootViewController" id="NWX-Yl-z3P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yos-sd-Bhu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-814" y="76"/>
+        </scene>
+        <!--段子-->
+        <scene sceneID="ZwU-El-iWP">
+            <objects>
+                <viewController id="nns-dD-fe1" customClass="DuanziViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hu6-Hu-rUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="nwz-6r-FnT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bDB-ll-3KP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DAR-VF-dJU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nns-dD-fe1" id="W1O-WN-uM2"/>
+                                    <outlet property="delegate" destination="nns-dD-fe1" id="lgA-Jb-1Nc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nwz-6r-FnT" firstAttribute="top" secondItem="DAR-VF-dJU" secondAttribute="bottom" id="2hV-os-yiN"/>
+                            <constraint firstItem="DAR-VF-dJU" firstAttribute="top" secondItem="bDB-ll-3KP" secondAttribute="topMargin" id="BYH-IL-1zg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DAR-VF-dJU" secondAttribute="trailing" constant="-20" id="JDL-HA-cgx"/>
+                            <constraint firstItem="nwz-6r-FnT" firstAttribute="top" secondItem="DAR-VF-dJU" secondAttribute="bottom" id="NnH-tL-gYk"/>
+                            <constraint firstItem="DAR-VF-dJU" firstAttribute="leading" secondItem="bDB-ll-3KP" secondAttribute="leadingMargin" constant="-20" id="OIT-8H-ads"/>
+                            <constraint firstItem="DAR-VF-dJU" firstAttribute="leading" secondItem="bDB-ll-3KP" secondAttribute="leadingMargin" constant="-20" id="X1U-ug-Pcl"/>
+                            <constraint firstItem="DAR-VF-dJU" firstAttribute="top" secondItem="bDB-ll-3KP" secondAttribute="topMargin" id="aNE-hM-3xQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DAR-VF-dJU" secondAttribute="trailing" constant="-20" id="wHu-UI-7R1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="段子" id="jBg-Jd-ac6"/>
+                    <connections>
+                        <outlet property="tableView" destination="DAR-VF-dJU" id="we5-eP-nY4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJX-dp-6yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-118" y="-44"/>
+        </scene>
+    </scenes>
+</document>

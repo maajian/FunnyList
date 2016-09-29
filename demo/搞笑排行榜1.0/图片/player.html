@@ -1,0 +1,44 @@
+<script>
+    function onLoad(){
+        document.documentElement.style.webkitTouchCallout="none";//禁止弹出菜单
+        document.documentElement.style.webkitUserSelect="none";  //禁止选中
+    }
+    
+    function vedio_onplay(){
+        //alert("vedio_onplay");
+        location.href = "objc:onplay";
+    }
+    </script>
+
+<style type="text/css">
+    div.player
+    {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-top:10px;
+    }
+    
+    </style>
+
+<body onload="onLoad();">
+    
+    <div class="player" >
+        
+        <div style="padding-left:20px">{$v_title}</div>
+        
+        <br/>
+        
+        <div align='center'>
+            
+            <video width="300" height="215" controls="controls" onplay="vedio_onplay();">
+                <source type="video/mp4" src="{$v_name}" width="200" height="100" />
+            </video>
+        </div>
+        
+        
+        
+    </div>
+    
+</body>
+

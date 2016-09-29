@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="cPi-Jo-jBQ">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cPi-Jo-jBQ" id="qnQ-lc-PNi">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmg-Ch-pCr">
+                        <rect key="frame" x="21" y="113" width="251" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Jo7-qP-lO7"/>
+                            <constraint firstAttribute="width" constant="251" id="iQ1-I6-SmE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rmg-Ch-pCr" firstAttribute="leading" secondItem="qnQ-lc-PNi" secondAttribute="leadingMargin" constant="13" id="O7W-34-tfb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Rmg-Ch-pCr" secondAttribute="bottom" constant="5" id="buD-7s-zzd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="311" y="350"/>
+        </tableViewCell>
+    </objects>
+</document>

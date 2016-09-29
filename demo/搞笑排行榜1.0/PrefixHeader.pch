@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  搞笑排行榜1.0
+//
+//  Created by Mac on 16/8/14.
+//  Copyright © 2016年 CXCK. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "UIImageView+WebCache.h"
+#import "UIViewExt.h"
+#import "MMExampleDrawerVisualStateManager.h"
+#import "UIViewController+MMDrawerController.h"
+#import "WXPhotoBrowser.h"
+
+#define kPhoto @"kPhoto"
+#define kShuaqianNoti @"kShuaqianNoti"
+#define kZanCount @"kZanCount"
+#define kCurrentFont @"kCurrentFont"
+#define kFontChangeNoti @"kFontChangeNoti"
+#define kTextFont [UIFont systemFontOfSize:20]
+#define kCellNotfication @"kCellNotfication"
+#define kMoomNoti @"kMoomNoti"
+#define kSunNoti @"kSunNoti"
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define kSinaWeiboObject (((AppDelegate *)[UIApplication sharedApplication].delegate)._weibo)//字体颜色
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
